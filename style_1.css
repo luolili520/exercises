@@ -1,0 +1,18 @@
+.resume {
+    display: inline-block;
+    border:1px solid #ccc;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.strong {
+    font-weight: 700;
+}
+.block {
+    display: block;
+}
+.left {
+    margin-left:30px;
+}
+.bottom {
+    margin-bottom: 15px;
+}

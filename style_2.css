@@ -1,0 +1,32 @@
+.resume {
+    display: inline-block;
+    /* border:1px solid #ccc; */
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.strong {
+    font-weight: 700;
+}
+.block {
+    display: block;
+}
+.left {
+    margin-left:30px;
+}
+.bottom {
+    margin-bottom: 15px;
+}
+.resume h1, .resume .content {
+    float: left;
+}
+.resume h1 {
+    background-color: skyblue;
+    margin-right: 30px;
+    padding-top: 60px;
+    width: 200px;
+    text-align: center;
+    height: 600px;
+}
+.resume .content {
+    padding-top: 20px;
+}

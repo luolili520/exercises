@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 1000px;
+}
+.resume {
+    border:1px solid #ccc;
+    /* padding-left: 20px;
+    padding-bottom: 10px; */
+    font-size: 16px;
+    width: 1000px;
+    
+}
+h1, h3{
+    font-size: 16px;
+}
+.resume h1 {
+    background-color: #8d8c90;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.strong {
+    font-weight: 700;
+}
+/* .block {
+    display: block;
+} */
+.left {
+    margin-left:30px;
+}
+/* .bottom {
+    margin-bottom: 15px;
+    
+} */
+.basic, .contact, .skill-description, .education, .project {
+    height: 120px;
+    border-top: 1px solid #ccc;
+}
+.basic h3,.basic div {
+    float: left;
+}
+.contact h3, .contact div {
+    float:left;
+}
+.skill-description h3, .skill-description .skill-b {
+    float:left;
+}
+.education h3, .education .edu-b {
+    float: left;
+}
+.project h3, .project .edu-b {
+    float: left;
+}
+.basic h3, .contact h3, .skill-description h3, .education h3, .project h3 {
+    width: 100px;
+    background-color: #7373733b;
+    /* height: 100%; */
+    margin-right: 10px;
+    line-height: 118px;
+    text-align: center;
+    
+}
+.basic div,.contact div,.skill-b,.edu-b, .pro-b {
+    padding-top: 10px;
+}
