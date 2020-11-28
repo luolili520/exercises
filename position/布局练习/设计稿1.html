@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul,html,body {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        list-style: none;
+    }
+    .header {
+        background-color: #333333;
+        height: 80px;
+    }
+    .wd {
+        width: 960px;
+    }
+    .header .main-hd {
+        margin: 0 auto;
+        /* background-color: green; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner {
+        width: 100%;
+        height: 300px;
+        background-color: #66BB33;
+    }
+
+    nav {
+        border: 1px solid #ccc; 
+    }
+    .main-nav {
+        height: 70px;
+           
+    }
+    .footer {
+        height: 120px;
+        width: 100%;
+        background-color: #666666;
+        text-align: center;
+    }
+    .content {
+        margin: 0 auto;
+    }
+    .one div,.two div,.three div {
+        padding: 80px;
+        border: 1px solid #ccc;
+    }
+    .one, .two, .three {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .nav {
+        border: 1px solid #ccc;  
+    }
+    .nav ul {
+        display: flex;
+        margin: 0 auto;
+        align-items: flex-end;
+        height: 72px;
+    }
+    .nav li {
+        height: 50px;
+        width: 116px;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+        background-color: #EEEEEE;
+        border-radius: 15px 15px 0 0;
+        text-align: center;
+        line-height: 50px;
+    }
+    .nav li.current {
+        background-color: #fff;
+        position: relative;
+    }
+    .nav li.current:after {
+        content:"";
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        left :0;
+        bottom: -1px;
+    }
+    .main-hd ul {
+        display: flex;
+        margin-top: 10px;
+    }
+    .main-hd li {
+        margin-right: 20px;
+    }
+    .main-hd li a {
+        color:#fff;
+    }
+    .main-hd .log {
+        line-height: 80px;
+        color: #fff;
+        font-size: 35px;
+    }
+    .banner .lunbo {
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        display: flex;
+        align-items: flex-end;
+        width: 134px;
+        justify-content: space-between;
+    }
+    .lunbo li {
+        width: 30px;
+        height: 36px;
+        border: 1px solid #14250A;
+        box-sizing: border-box; 
+        text-align: center;
+        line-height: 36px;
+        background-color: #fff;
+    }
+    .lunbo li.current {
+        height: 50px;
+        line-height: 65px;
+    }
+    .main-banner {
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .footer span {
+        color: #fff;
+        display: inline-block;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="main-hd wd">
+            <div class="log">Logo</div>
+            <ul>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="main-banner wd">
+           <ul class="lunbo">
+                <li><span>1</span></li>
+                <li class="current"><span>2</span></li>
+                <li><span>3</span></li>
+                <li><span>4</span></li>
+            </ul> 
+        </div>
+    </div>
+        <div class="nav">
+            <ul class="wd">
+                <li class="current">HOME</li>
+                <li>PROFILE</li>
+                <li>ABOUT</li>
+            </ul>
+        </div>
+        <div class="content wd">
+            <div class="one">
+                <div>content1</div>
+                <div>content2</div>
+                <div>content3</div>
+            </div>
+           <div class="two">
+               <div>content4</div>
+                <div>content5</div>
+                <div>content6</div>
+                <div>content7</div>
+           </div>
+            <div class="three">
+                <div>content9</div>
+                <div>content10</div>
+                <div>content11</div>
+            </div>
+            
+        </div>
+    <div class="footer">
+        <span>@ 2018 ife.baidu.com</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .wrapper {
+        padding: 15px 20px;
+        border: 1px dashed #ff6cf0;
+    }
+    .left {
+        width: 120px;
+        border: 1px dashed #ddd;
+    }
+    .right {
+        margin-left: 20px;
+        border: 1px dashed #ddd;
+    }
+    /* 添加样式1：双inline-block */
+    /* .wrapper {
+        font-size: 0;
+        box-sizing: content-box;
+    }
+    .left, .right {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .right {
+        width: calc(100% - 140px);
+    } */
+
+    /* 添加样式2:双float */
+    /* .wrapper {
+        overflow: hidden;
+    }
+    .left,.right {
+        float: left;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .right {
+        width: calc(100% - 140px);
+    } */
+    /* 添加样式3：float+margin */
+    /* .wrapper {
+        overflow: hidden;
+    }
+    .left {
+        float: left;
+    }
+    .right {
+        margin-left: 140px;
+    } */
+
+    /* 添加样式4 */
+    /* .wrapper {
+        overflow: auto;
+    }
+    .left {
+        float: left;
+        margin-right: 20px;
+    }
+    .right {
+        overflow: auto;
+    } */
+    /* 添加样式5“flex */
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+    .left {
+        flex: 0 0 auto;
+    }
+    .right {
+        flex: 1 1 auto;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="left">
+            左边固定宽度，高度不固定 <br /><br /><br /><br />高度有可能会很小，也可能会很大
+        </div>
+        <div class="right">
+            这里的内容可能会比左侧高，也会比左侧低，需要自适应。<br />
+            基本的样式是2个div相距20px，左侧div宽 120px;
+        </div>
+    </div>
+</body>
+</html>

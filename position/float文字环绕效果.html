@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    /* div {
+        border: 1px solid green;
+        padding: 5px;
+    } */
+    /* img {
+        float: left;
+    } */
+    .clearfix:after {
+        content:"";
+        display: table;
+        clear: both;
+    }
+    .main{
+            width: 400px;
+            background: red;
+            overflow: hidden;
+        }
+
+        .left{
+            background: yellow;
+            float: left;
+        }
+
+        .right{
+            background: green;
+            float: left;
+        }
+
+        .parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    height: 50px;
+    width: 80px;
+}
+    img.top { 
+        vertical-align: text-top;
+         }
+    img.bottom {
+         vertical-align: text-bottom;
+          }
+    img.middle {
+         vertical-align: middle; 
+         }
+    </style>
+
+</head>
+<body>
+    <div class='clearfix'>
+        <img src="images/下降箭头.jpg" alt="">
+        哈哈哈，我要看好的和环比不对不对补充道和电动机的豪华车的多喝点承诺低年级
+    </div>
+
+    <div class="main">
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+      </div>
+
+      <div>An <img src="https://mdn.mozillademos.org/files/12245/frame_image.svg" alt="link" width="32" height="32" /> image with a default alignment.</div>
+      <div>An <img class="top" src="https://mdn.mozillademos.org/files/12245/frame_image.svg" alt="link" width="32" height="32" /> image with a text-top alignment.</div>
+      <div>An <img class="bottom" src="https://mdn.mozillademos.org/files/12245/frame_image.svg" alt="link" width="32" height="32" /> image with a text-bottom alignment.</div>
+      <div>An <img class="middle" src="https://mdn.mozillademos.org/files/12245/frame_image.svg" alt="link" width="32" height="32" /> image with a middle alignment.</div>
+</body>
+</html>
